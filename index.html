@@ -1,104 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Cao Trường Toàn</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-size: 14px; 
-        }
+    <title>Shop Bán Hàng</title>
 
-        header {
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .container-body {
-            padding: 20px;
-            width: 1000px; 
-            margin: 0 auto; 
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-size: 1.5em; 
-        }
-
-        p {
-            font-size: 0.9em; 
-        }
-
-        ul {
-            font-size: 0.9em; 
-        }
-    </style>
+    <!-- Sử dụng Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="container">
-        <div class="row-md-12" style="background-color: #007bff">
-            <header class="text-center">
-                <h1>Nhân viên kinh danh</h1>
-                <h2>Cao Trường Toàn</h2>
-                <p>Sinh ngày: 09/02/2002 | Nam | Điện thoại: 0855328545 | Email: truongtoan@gmmail.com</p>
-                <p>Địa chỉ: 1A/28 Hưng Phú Q.8 Tp.HCM | Website: <a href="https://sinhvien.hutech.edu.vn">https://sinhvien.hutech.edu.vn</a></p>
-            </header>
-        </div>
 
-        <div>
-            <div class="container container-body">
-                <div class="row">
-                    <div class="col-md-8">
-                        <section id="education" class="mb-5">
-                            <h2>Học vấn</h2>
-                            <p>10/2010 - 05/2014: Đại học X</p>
-                            <p>Ngành: Quản trị Doanh nghiệp</p>
-                            <p>Loại: Giỏi | Điểm trung bình: 8.0</p>
-                        </section>
-                        <section id="experience" class="mb-5">
-                            <h2>Kinh nghiệm làm việc</h2>
-                            <p>03/2015 - Hiện tại: Công ty Y</p>
-                            <h4>Nhân viên bán hàng</h4>
-                            <ul>
-                                <li>Hỗ trợ viết bài quảng cáo sản phẩm qua kênh Facebook forum.</li>
-                                <li>Giới thiệu và tư vấn sản phẩm cho khách hàng qua điện thoại và email.</li>
-                            </ul>
-                            <p>06/2020 - 02/2024: Cửa hàng Z</p>
-                            <h4>Nhân viên bán hàng</h4>
-                            <ul>
-                                <li>Bán hàng trực tiếp tại cửa hàng cho người nước ngoài và người Việt.</li>
-                                <li>Quảng bá sản phẩm thông qua các ấn phẩm truyền thông như banner, poster, tờ rơi.</li>
-                            </ul>
-                        </section>
+<body>
+    <header class="bg-success text-white text-center py-4">
+        <h1>Trang Web Bán Hàng</h1>
+    </header>
+
+    <!-- Menu điều hướng sử dụng Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand" href="#">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Danh sách sản phẩm -->
+            <div class="col-md-9">
+                <!-- Hiển thị sản phẩm bằng dạng dòng sản phẩm sử dụng Bootstrap Row và Col -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Sản phẩm 1 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/684/600/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 1</h5>
+                                <p class="card-text">Mô tả sản phẩm 1.</p>
+                                <p class="card-text">Giá: $100</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <section id="objective" class="mb-5">
-                            <h2>Mục tiêu nghề nghiệp</h2>
-                            <p>Áp dụng kỹ năng bán hàng và hiểu biết thị trường để trở thành nhân viên bán hàng chuyên nghiệp. Tăng số lượng khách hàng và mở rộng tệp khách hàng cho công ty.</p>
-                        </section>
-                        <section id="skills" class="mb-5">
-                            <h2>Kỹ năng</h2>
-                            <ul>
-                                <li>Nhân viên bán hàng</li>
-                                <li>Tin học văn phòng</li>
-                                <li>Tiếng Anh</li>
-                            </ul>
-                        </section>
+
+                    <!-- Sản phẩm 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1025/600/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 2</h5>
+                                <p class="card-text">Mô tả sản phẩm 2.</p>
+                                <p class="card-text">Giá: $150</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sản phẩm 3 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/1060/600/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 3</h5>
+                                <p class="card-text">Mô tả sản phẩm 3.</p>
+                                <p class="card-text">Giá: $120</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sản phẩm 4 -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/684/600/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 1</h5>
+                                <p class="card-text">Mô tả sản phẩm 1.</p>
+                                <p class="card-text">Giá: $100</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sản phẩm  -->
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/684/600/400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sản Phẩm 1</h5>
+                                <p class="card-text">Mô tả sản phẩm 1.</p>
+                                <p class="card-text">Giá: $100</p>
+                                <a href="#" class="btn btn-primary">Mua Ngay</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            
+            <!-- Sidebar -->
+            <div class="col-md-3" >
+                <div class="bg-primary text-white p-3" style="height: 800px;">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: #fff;">Facebook</a></li>
+                        <li><a href="#" style="color: #fff;">Twitter</a></li>
+                        <li><a href="#" style="color: #fff;">Instagram</a></li>
+                        <li><a href="#" style="color: #fff;">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>  
-    <div>
-        <footer class="text-center mt-5">
-            <p>Sở thích: Bán hàng, quảng bá sản phẩm,...</p>
-            <p>Chứng chỉ: 2013 - Giải nhất Tài năng Việt Nam | 2024 - Nhân viên xuất sắc năm Công ty Y</p>
-            <p>Hoạt động: Tình nguyện viên, điều phối nhóm tình nguyện...</p>
-        </footer>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Phần footer -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 1</h3>
+                    <p>Nội dung cột 1.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 2</h3>
+                    <p>Nội dung cột 2.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-dark text-white text-center py-4">
+                    <h3>Cột 3</h3>
+                    <p>Nội dung cột 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sử dụng Bootstrap JS và Popper.js (cần cài đặt trước khi sử dụng Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
+
 </html>
